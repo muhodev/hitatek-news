@@ -1,3 +1,8 @@
+.h-top__grid {
+  display: flex;
+  flex-direction: column;
+}
+
 .h-posts__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -50,6 +55,17 @@
   gap: 12px;
 }
 
+@media only screen and (max-width: 768px) {
+  .h-featured-post__section {
+    order: 3;
+  }
+
+  .h-top__grid  .h-top-separator {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
 @media only screen and (max-width: 1080px) {
   .h-latest-posts .h-post {
     flex-direction: column !important;
@@ -79,7 +95,6 @@
 .h-post__time {
   color: var(--ink-10, #a0a5aa);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: TRT;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
