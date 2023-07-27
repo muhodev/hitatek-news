@@ -19,6 +19,11 @@
 body {
   font-family: "TRT";
 }
+a {
+  color: currentColor;
+  text-decoration: none;
+  font-size: inherit;
+}
 
 .font-serif {
   font-family: var(--family-serif);
@@ -113,6 +118,7 @@ body {
   font-size: 24px;
   line-height: 32px;
 }
+
 
 @media only screen and (max-width: 768px) {
   .h-post__title--big {

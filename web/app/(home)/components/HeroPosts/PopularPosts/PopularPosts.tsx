@@ -1,6 +1,7 @@
 import { Author } from "@/components";
 import { Article } from "@/types";
 import "./style.css";
+import Link from "next/link";
 
 export default function PopularPosts({ posts }: { posts: Article[] }) {
   return (
@@ -22,7 +23,9 @@ export default function PopularPosts({ posts }: { posts: Article[] }) {
         >
           <div className="h-popular__count">{index + 1}</div>
           <div className="h-popular__right">
-            <h3 className="h-popular__title">{post.title}</h3>
+            <h3 className="h-popular__title">
+              <Link href={`/post/${post.slug}`}>{post.title}</Link>
+            </h3>
             <Author avatar="" name={post.author?.name} />
           </div>
         </div>

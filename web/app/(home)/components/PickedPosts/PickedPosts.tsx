@@ -1,6 +1,7 @@
 import { Author } from "@/components";
 import { Article } from "@/types";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PickedPosts({ posts }: { posts: Article[] }) {
   return (
@@ -21,7 +22,7 @@ export default function PickedPosts({ posts }: { posts: Article[] }) {
             </div>
             <div className="h-picked-post__content">
               <h3 className="h-post__title h-post__title--normal">
-                {post.title}
+                <Link href={`/post/${post?.slug}`}>{post.title}</Link>
               </h3>
               <p className="h-post__excerpt h-post__excerpt--normal">
                 {post.excerpt}

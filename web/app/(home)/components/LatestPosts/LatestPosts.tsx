@@ -3,6 +3,7 @@ import { Article } from "@/types";
 import Image from "next/image";
 import format from "date-fns/formatDistanceToNowStrict";
 import isValid from "date-fns/isValid";
+import Link from "next/link";
 
 export default function LatestPosts({ posts }: { posts: Article[] }) {
   return (
@@ -37,7 +38,7 @@ export default function LatestPosts({ posts }: { posts: Article[] }) {
               </time>
             </div>
             <h3 className="h-post__title h-post__title--normal">
-              {post.title}
+              <Link href={`/post/${post.slug}`}>{post.title}</Link>
             </h3>
             <p className="h-post__excerpt h-post__excerpt--normal">
               {post.excerpt}

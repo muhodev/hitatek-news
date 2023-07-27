@@ -4,6 +4,7 @@ import { Author } from "@/components";
 import { Article } from "@/types";
 
 import "./style.css";
+import Link from "next/link";
 
 export default function TopPosts({ posts }: { posts: Article[] }) {
   const firstPost = useMemo(() => {
@@ -27,7 +28,7 @@ export default function TopPosts({ posts }: { posts: Article[] }) {
         </div>
         <div className="h-post__content">
           <h2 className="h-post__title h-post__title--big">
-            {firstPost?.title}
+            <Link href={`/post/${firstPost?.slug}`}>{firstPost?.title}</Link>
           </h2>
           <p className="h-post__excerpt h-post__excerpt--big">
             {firstPost?.excerpt}
@@ -62,7 +63,9 @@ export default function TopPosts({ posts }: { posts: Article[] }) {
               />
             </div>
             <div className="h-post__content">
-              <h3 className="h-post__title">{post.title}</h3>
+              <h3 className="h-post__title">
+                <Link href={`/post/${post?.slug}`}>{post.title}</Link>
+              </h3>
               <p className="h-post__excerpt h-post__excerpt--small">
                 {post.excerpt}
               </p>
