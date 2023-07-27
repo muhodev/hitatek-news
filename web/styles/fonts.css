@@ -1,0 +1,63 @@
+/* TRT Regular */
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTRegular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* TRT Regular Italic */
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTRegularItalic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* TRT Bold */
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTBold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* TRT Bold Italic*/
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTBoldItalic.ttf") format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* TRT Light */
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTLight.ttf") format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* TRT Light Italic*/
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTLightItalic.ttf") format('truetype');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* TRT Medium */
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTMedium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* TRT Medium Italic*/
+@font-face {
+  font-family: "TRT";
+  src: url("/fonts/trt/TRTMediumItalic.ttf") format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}

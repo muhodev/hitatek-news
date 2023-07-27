@@ -1,0 +1,19 @@
+.h-author {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.h-author__avatar {
+  border-radius: 50%;
+}
+
+.h-author__name {
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,4 +1,6 @@
-@import url(./normalize.css);
+@import url("./normalize.css");
+@import url("./fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
 
 :root{
     --solid-blue-60: #0089CC;
@@ -6,8 +8,18 @@
     --white: #fff;
     --foreground: #fdfdfd;
     --red: #FB2040;
+    --black: #000;
     --text-main: #000;
     --tablet-size: 768px;
+    --family-serif:'Noto Serif', serif
+}
+
+body {
+    font-family: "TRT";
+}
+
+.font-serif {
+    font-family:var(--family-serif) ;
 }
 
 .h-container {

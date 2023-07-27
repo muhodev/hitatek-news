@@ -1,0 +1,10 @@
+.h-opinion__title {
+  color: var(--solid-blue-70);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
