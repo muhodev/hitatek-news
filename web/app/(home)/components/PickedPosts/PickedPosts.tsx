@@ -7,7 +7,7 @@ export default function PickedPosts({ posts }: { posts: Article[] }) {
   return (
     <div className="h-picked-posts">
       <h2 className="h-post--headline" style={{ paddingBottom: "12px" }}>
-        EDITOR'S PICK
+        {"EDITOR'S PICK"}
       </h2>
       <div>
         {posts.map((post) => (

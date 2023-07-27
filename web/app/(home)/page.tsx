@@ -1,4 +1,3 @@
-import { getHomeDataService } from "@/services";
 import {
   OpinionTitle,
   FeaturedPost,
@@ -8,10 +7,11 @@ import {
 } from "./components";
 import { array } from "@/lib/array";
 import "./style.css";
+import { getHome } from "@/lib/api/getHome";
 
 export const revalidate = 1;
 export default async function Home() {
-  const data = await getHomeDataService();
+  const data: any = await getHome();
 
   return (
     <main>
