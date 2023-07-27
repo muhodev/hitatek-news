@@ -8,7 +8,8 @@
             "name": "Alfons Lopez Tena",
             "avatar": "/assets/avatars/ALFONS-LOPEZ-TENA.jpg"
         },
-        "thumbnail": "/assets/posts/trump-1.jpg"
+        "thumbnail": "/assets/posts/trump-1.jpg",
+        "createdAt": "2023-05-28"
     },
     {
         "id": "2",
@@ -19,7 +20,8 @@
             "name": "Ahsan Butt",
             "avatar": "/assets/avatars/Ahsan-Butt.jpg"
         },
-        "thumbnail": "/assets/posts/trump-1.jpg"
+        "thumbnail": "/assets/posts/trump-1.jpg",
+        "createdAt": "2023-05-27"
     },
     {
         "id": "3",
@@ -30,7 +32,8 @@
             "name": "CJ Werleman",
             "avatar": "/assets/avatars/CJ-Werleman.jpg"
         },
-        "thumbnail": "/assets/posts/trump-1.jpg"
+        "thumbnail": "/assets/posts/trump-1.jpg",
+        "createdAt": "2023-05-26"
     },
     {
         "id": "4",
@@ -41,7 +44,8 @@
             "name": "Alfons Lopez Tena",
             "avatar": "/assets/avatars/ALFONS-LOPEZ-TENA.jpg"
         },
-        "thumbnail": "/assets/posts/trump-1.jpg"
+        "thumbnail": "/assets/posts/trump-1.jpg",
+        "createdAt": "2023-05-25"
     },
     {
         "id": "5",
@@ -52,7 +56,8 @@
             "name": "Arif-Rafiq",
             "avatar": "/assets/avatars/Arif-Rafiq.jpg"
         },
-        "thumbnail": "/assets/posts/trump-1.jpg"
+        "thumbnail": "/assets/posts/trump-1.jpg",
+        "createdAt": "2023-05-24"
     },
     {
         "id": "6",
@@ -63,7 +68,8 @@
             "name": "AAbdul Basit",
             "avatar": "/assets/avatars/Arif-Rafiq.jpg"
         },
-        "thumbnail": "/assets/posts/trump-1.jpg"
+        "thumbnail": "/assets/posts/trump-1.jpg",
+        "createdAt": "2023-05-23"
     },
     {
         "id": "7",
@@ -74,7 +80,8 @@
             "name": "Sharan Dhaliwal",
             "avatar": "/assets/avatars/Sharan-Dhaliwal.jpeg"
         },
-        "thumbnail": "/assets/posts/post-1.jpeg"
+        "thumbnail": "/assets/posts/post-1.jpeg",
+        "createdAt": "2023-05-22"
     },
     {
         "id": "8",
@@ -85,7 +92,8 @@
             "name": "Abdi Ismail Samatar",
             "avatar": "/assets/avatars/Abdi-Ismail-Samatar.png"
         },
-        "thumbnail": "/assets/posts/post-2.jpeg"
+        "thumbnail": "/assets/posts/post-2.jpeg",
+        "createdAt": "2023-05-21"
     },
     {
         "id": "9",
@@ -96,7 +104,8 @@
             "name": "Waqas Mirza",
             "avatar": null
         },
-        "thumbnail": "/assets/posts/post-3.jpeg"
+        "thumbnail": "/assets/posts/post-3.jpeg",
+        "createdAt": "2023-05-20"
     },
     {
         "id": "10",
@@ -107,7 +116,8 @@
             "name": "Faysal Mohamad",
             "avatar": "/assets/avatars/author-1.png"
         },
-        "thumbnail": "/assets/posts/post-4.jpeg"
+        "thumbnail": "/assets/posts/post-4.jpeg",
+        "createdAt": "2023-05-19"
     },
     {
         "id": "11",
@@ -118,7 +128,8 @@
             "name": "Tom Hussain",
             "avatar": "/assets/avatars/author-2.jpeg"
         },
-        "thumbnail": "/assets/posts/post-5.jpeg"
+        "thumbnail": "/assets/posts/post-5.jpeg",
+        "createdAt": "2023-05-18"
     },
     {
         "id": "12",
@@ -129,7 +140,8 @@
             "name": "Ali Çınar",
             "avatar": "/assets/avatars/author-3.png"
         },
-        "thumbnail": "/assets/posts/post-6.jpeg"
+        "thumbnail": "/assets/posts/post-6.jpeg",
+        "createdAt": "2023-3-17"
     },
     {
         "id": "13",
@@ -140,7 +152,8 @@
             "name": "CJ Werleman",
             "avatar": "/assets/avatars/CJ-Werleman.jpeg"
         },
-        "thumbnail": "/assets/posts/post-7.jpeg"
+        "thumbnail": "/assets/posts/post-7.jpeg",
+        "createdAt": "2023-03-16"
     },
     {
         "id": "14",
@@ -151,7 +164,8 @@
             "name": "Arif Rafiq",
             "avatar": "/assets/avatars/author-4.jpeg"
         },
-        "thumbnail": "/assets/posts/post-8.jpeg"
+        "thumbnail": "/assets/posts/post-8.jpeg",
+        "createdAt": "2023-03-15"
     },
     {
         "id": "15",
@@ -162,6 +176,7 @@
             "name": "Nafees Mahmud",
             "avatar": null
         },
-        "thumbnail": "/assets/posts/post-9.png"
+        "thumbnail": "/assets/posts/post-9.png",
+        "createdAt": "2023-03-14"
     }
 ]

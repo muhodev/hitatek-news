@@ -7,4 +7,5 @@ export type Article = {
   excerpt: string;
   author: Author;
   thumbnail: string;
+  createdAt: string;
 };

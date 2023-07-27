@@ -7,6 +7,7 @@ import {
   PickedPosts,
 } from "./components";
 import { array } from "@/lib/array";
+import "./style.css";
 
 export const revalidate = 1;
 export default async function Home() {
@@ -25,7 +26,7 @@ export default async function Home() {
         topPosts={array(data?.topPosts)}
         popularPosts={array(data?.popularPosts)}
       />
-      <div>
+      <div className="h-container h-posts__grid">
         <LatestPosts posts={array(data?.latestPosts)} />
         <PickedPosts posts={array(data?.pickedPosts)} />
       </div>
