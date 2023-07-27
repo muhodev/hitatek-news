@@ -1,0 +1,15 @@
+.h-header {
+    background-color: var(--solid-blue-70);
+    color: var(--white);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}

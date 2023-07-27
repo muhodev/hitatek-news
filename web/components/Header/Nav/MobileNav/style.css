@@ -1,0 +1,29 @@
+
+@media only screen and (min-width: 768px) {
+    .h-header__nav--mobile {
+        display: none !important;
+    }
+}
+.h-header__nav--mobile{
+    height: 100%;
+}
+
+.h-header__nav--mobile-top {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.h-header__nav--mobile .h-header__nav-item {
+    background-color: var(--solid-blue-70);
+    color: var(--white);
+    border: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-header__nav--mobile .h-header__nav-item svg {
+    display: flex;
+    align-items: center;
+}

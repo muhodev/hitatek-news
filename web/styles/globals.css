@@ -1,0 +1,70 @@
+@import url(./normalize.css);
+
+:root{
+    --solid-blue-60: #0089CC;
+    --solid-blue-70: #005D99;
+    --white: #fff;
+    --foreground: #fdfdfd;
+    --red: #FB2040;
+    --text-main: #000;
+    --tablet-size: 768px;
+}
+
+.h-container {
+    width: 100%;
+    max-width:1252px;
+    margin-inline: auto;
+    padding: 0 2rem;
+}
+
+.text-main {
+    color: var(--text-main) !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-start {
+    align-items:flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.gap-x-2 {
+    column-gap: .25rem;
+}
+
+.red-dot {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--red);
+    border-radius: 50%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
