@@ -1,0 +1,36 @@
+.h-popular-posts {
+  padding-left: 24px;
+  border-left: 1px solid var(--sky-40);
+}
+.h-popular__content {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.h-popular__count {
+  color: var(--sky-50, #bfc3c9);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 40px;
+}
+
+.h-popular__right {
+  flex: 1 1 0%;
+}
+
+.h-popular__right .h-popular__title{
+  color: var(--ink-50, #22262a);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* 16 */
+  font-family: Noto Serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}

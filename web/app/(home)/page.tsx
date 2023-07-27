@@ -2,8 +2,7 @@ import { getHomeDataService } from "@/services";
 import {
   OpinionTitle,
   FeaturedPost,
-  PopularPosts,
-  TopPosts,
+  HeroPosts,
   LatestPosts,
   PickedPosts,
 } from "./components";
@@ -22,10 +21,10 @@ export default async function Home() {
         slug={data?.featuredPost?.slug}
         title={data?.featuredPost?.title}
       />
-      <div>
-        <TopPosts posts={array(data?.topPosts)} />
-        <PopularPosts posts={array(data?.popularPosts)} />
-      </div>
+      <HeroPosts
+        topPosts={array(data?.topPosts)}
+        popularPosts={array(data?.popularPosts)}
+      />
       <div>
         <LatestPosts posts={array(data?.latestPosts)} />
         <PickedPosts posts={array(data?.pickedPosts)} />
