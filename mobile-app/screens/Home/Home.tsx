@@ -1,5 +1,7 @@
 import { useMemo } from "react";
-import { ScrollView, Text, View } from "react-native";
+import { Platform, ScrollView, Text, View, StatusBar } from "react-native";
+import SafeAreaView from "react-native-safe-area-view";
+
 import Topbar from "../../components/Topbar";
 import {
   FeaturedPost,
@@ -86,7 +88,12 @@ export default function Home() {
   }, [data]);
 
   return (
-    <View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+      }}
+    >
       <Topbar />
       <ScrollView>
         <OpinionTitle />
@@ -108,6 +115,6 @@ export default function Home() {
           )}
         </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }

@@ -1,20 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import { SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import SafeAreaView from "react-native-safe-area-view";
 
 import Home from "./screens/Home";
+import { themeConfig } from "./constants";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Home />
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <SafeAreaView style={{ flex: 1 }}>
+        <Home />
+        <StatusBar style="auto" backgroundColor={themeConfig.solidBlue70} />
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-});
