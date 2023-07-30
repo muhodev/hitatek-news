@@ -53,13 +53,15 @@ const styles = StyleSheet.create({
   mainPostTitle: {
     fontSize: 28,
     lineHeight: 36,
-    fontWeight: "700",
+    fontWeight: "600",
+    fontFamily: themeConfig.primaryFontBold,
   },
   mainPostExcerpt: {
     fontSize: 16,
     lineHeight: 24,
     marginTop: 8,
     marginBottom: 16,
+    fontFamily: themeConfig.primaryFontRegular,
   },
   otherPostsContainer: {
     marginHorizontal: 16,
@@ -77,15 +79,17 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontWeight: "700",
+    fontWeight: "600",
     lineHeight: 28,
     paddingTop: 12,
+    fontFamily: themeConfig.primaryFontBold,
   },
   excerpt: {
     fontSize: 14,
     fontWeight: "400",
     lineHeight: 20,
     paddingVertical: 12,
+    fontFamily: themeConfig.primaryFontRegular,
   },
   otherPostSeparator: {
     paddingTop: 24,

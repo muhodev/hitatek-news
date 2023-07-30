@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     fontWeight: "700",
+    fontFamily: "TRT-Bold",
     color: themeConfig.solidBlue70,
     textTransform: "uppercase",
     fontStyle: "normal",

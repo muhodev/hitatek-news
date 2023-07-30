@@ -12,5 +12,7 @@ export const themeConfig = {
   ink10: "#A0A5AA",
   ink50: "#22262a",
   tabletSize: "768px",
-  familySerif: `"Noto Serif", serif`,
+  primaryFontRegular: "Noto-Serif-regular",
+  primaryFontBold: `Noto-Serif-bold`,
+  secondaryFontBold: "TRT-Bold",
 };

@@ -1,5 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { Author as AuthorType } from "../../types";
+import { themeConfig } from "../../constants";
 
 export default function Author({
   avatar,
@@ -34,5 +35,6 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     letterSpacing: 1,
     fontWeight: "700",
+    fontFamily: themeConfig.secondaryFontBold,
   },
 });

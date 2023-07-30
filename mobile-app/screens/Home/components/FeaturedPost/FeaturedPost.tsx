@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { Article } from "../../../../types";
 import { Author } from "../../../../components";
+import { themeConfig } from "../../../../constants";
 
 export default function FeaturedPost({ thumbnail, title, author }: Article) {
   return (
@@ -25,7 +26,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    fontWeight: "700",
+    fontWeight: "600",
+    fontFamily: themeConfig.primaryFontBold,
     lineHeight: 28,
     color: "white",
     marginBottom: 16,

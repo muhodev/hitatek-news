@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: "700",
+    fontFamily: themeConfig.secondaryFontBold,
     fontSize: 16,
     lineHeight: 24,
     letterSpacing: 2,
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     fontWeight: "400",
+    fontFamily: themeConfig.primaryFontRegular,
     marginBottom: 8,
   },
   counterContainer: {

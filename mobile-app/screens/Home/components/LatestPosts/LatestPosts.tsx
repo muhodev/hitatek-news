@@ -54,6 +54,8 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     letterSpacing: 1,
     textTransform: "uppercase",
+    fontWeight: "700",
+    fontFamily: themeConfig.secondaryFontBold,
   },
   thumbnail: {
     height: 45,
@@ -61,15 +63,17 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 16,
-    fontWeight: "700",
+    fontWeight: "600",
     lineHeight: 24,
     paddingTop: 8,
+    fontFamily: themeConfig.primaryFontBold,
   },
   excerpt: {
     fontSize: 14,
     fontWeight: "400",
     lineHeight: 20,
     paddingVertical: 8,
+    fontFamily: themeConfig.primaryFontRegular,
   },
   separator: {
     paddingTop: 24,
