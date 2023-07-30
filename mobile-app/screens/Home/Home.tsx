@@ -1,7 +1,10 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { useMemo } from "react";
+import { ScrollView, Text, View } from "react-native";
 import Topbar from "../../components/Topbar";
 import {
   FeaturedPost,
+  Footer,
+  LatestPosts,
   OpinionTitle,
   PopularPosts,
   TopPosts,
@@ -9,7 +12,6 @@ import {
 import { useFetch } from "../../hooks";
 import { API_BASE_URL } from "../../constants";
 import { Article, Author } from "../../types";
-import { useMemo } from "react";
 
 type HomeResponse = {
   featuredPost: Article;
@@ -77,6 +79,12 @@ export default function Home() {
       : [];
   }, [data]);
 
+  const latestPosts = useMemo(() => {
+    return !!data?.latestPosts && Array.isArray(data?.latestPosts)
+      ? data.latestPosts.map((post) => ArticleModel(post))
+      : [];
+  }, [data]);
+
   return (
     <View>
       <Topbar />
@@ -90,10 +98,12 @@ export default function Home() {
           ) : !data ? (
             <Text>No found any data</Text>
           ) : (
-            <View style={styles.container}>
+            <View>
               <TopPosts mainPost={topPosts.mainPost} posts={topPosts.posts} />
               <PopularPosts posts={popularPosts} />
               <FeaturedPost {...featuredPost} />
+              <LatestPosts posts={latestPosts} />
+              <Footer />
             </View>
           )}
         </View>
@@ -101,9 +111,3 @@ export default function Home() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    paddingBottom: 50,
-  },
-});
