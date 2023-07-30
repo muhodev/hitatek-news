@@ -1,6 +1,11 @@
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import Topbar from "../../components/Topbar";
-import { FeaturedPost, OpinionTitle, TopPosts } from "./components/";
+import {
+  FeaturedPost,
+  OpinionTitle,
+  PopularPosts,
+  TopPosts,
+} from "./components/";
 import { useFetch } from "../../hooks";
 import { API_BASE_URL } from "../../constants";
 import { Article, Author } from "../../types";
@@ -66,6 +71,12 @@ export default function Home() {
     };
   }, [data]);
 
+  const popularPosts = useMemo(() => {
+    return !!data?.popularPosts && Array.isArray(data?.popularPosts)
+      ? data.popularPosts.map((post) => ArticleModel(post))
+      : [];
+  }, [data]);
+
   return (
     <View>
       <Topbar />
@@ -81,6 +92,7 @@ export default function Home() {
           ) : (
             <View>
               <TopPosts mainPost={topPosts.mainPost} posts={topPosts.posts} />
+              <PopularPosts posts={popularPosts} />
               <FeaturedPost {...featuredPost} />
             </View>
           )}

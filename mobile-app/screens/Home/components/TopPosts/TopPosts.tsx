@@ -10,7 +10,6 @@ export default function TopPosts({
   mainPost: Article;
   posts: Article[];
 }) {
-  console.log({ author: mainPost.author });
   return (
     <View>
       <View>

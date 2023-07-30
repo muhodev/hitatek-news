@@ -2,6 +2,7 @@ export const themeConfig = {
   solidBlue60: "#0089cc",
   solidBlue70: "#005d99",
   sky40: "#e1e6eb",
+  sky50: "#BFC3C9",
   white: "#fff",
   foreground: "#fdfdfd",
   red: "#fb2040",
