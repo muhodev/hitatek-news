@@ -24,6 +24,9 @@
       },
       "package": "com.hitatek.news"
     },
+    "androidStatusBar": {
+      "backgroundColor": "#005d99"
+    },
     "web": {
       "favicon": "./assets/favicon.png"
     },

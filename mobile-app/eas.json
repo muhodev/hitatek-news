@@ -10,7 +10,24 @@
     "preview": {
       "distribution": "internal"
     },
-    "production": {}
+    "previewApk": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_API_BASE_URL": "https: //hitatek-news.vercel.app/api"
+        }
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https: //hitatek-news.vercel.app/api"
+      }
+    },
+    "test": {
+      "env": {
+        "EXPO_PUBLIC_API_BASE_URL": "https: //hitatek-news.vercel.app/api"
+      }
+    }
   },
   "submit": {
     "production": {}
