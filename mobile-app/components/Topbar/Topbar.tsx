@@ -1,5 +1,5 @@
 import { TouchableOpacity, StyleSheet, View } from "react-native";
-import { themeConfig } from "../../contants/theme";
+import { themeConfig } from "../../constants";
 import { MenuIcon, SearchIcon } from "../Icons";
 
 export default function Topbar() {

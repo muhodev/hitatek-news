@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
-import { themeConfig } from "../../../../contants/theme";
+import { themeConfig } from "../../../../constants";
 
 const title = "OPINION";
 export default function OpinionTitle() {
