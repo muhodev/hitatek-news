@@ -90,7 +90,7 @@ export default function Home() {
           ) : !data ? (
             <Text>No found any data</Text>
           ) : (
-            <View>
+            <View style={styles.container}>
               <TopPosts mainPost={topPosts.mainPost} posts={topPosts.posts} />
               <PopularPosts posts={popularPosts} />
               <FeaturedPost {...featuredPost} />
@@ -104,6 +104,6 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 16,
+    paddingBottom: 50,
   },
 });
